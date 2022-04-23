@@ -1902,7 +1902,7 @@ _Py_Specialize_CompareOp(PyObject *lhs, PyObject *rhs, _Py_CODEUNIT *instr,
         SPECIALIZATION_FAIL(COMPARE_OP, SPEC_FAIL_COMPARE_OP_NOT_FOLLOWED_BY_COND_JUMP);
         goto failure;
     }
-    assert(oparg <= Py_GE);
+    assert(oparg <= Py_ALE);
     int when_to_jump_mask = compare_masks[oparg];
     if (next_opcode == POP_JUMP_FORWARD_IF_FALSE ||
         next_opcode == POP_JUMP_BACKWARD_IF_FALSE) {

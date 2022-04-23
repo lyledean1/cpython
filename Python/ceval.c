@@ -3752,7 +3752,7 @@ handle_eval_breaker:
 
         TARGET(COMPARE_OP) {
             PREDICTED(COMPARE_OP);
-            assert(oparg <= Py_GE);
+            assert(oparg <= Py_ALE);
             PyObject *right = POP();
             PyObject *left = TOP();
             PyObject *res = PyObject_RichCompare(left, right, oparg);
