@@ -30,7 +30,6 @@ EQEQUAL                 '=='
 NOTEQUAL                '!='
 LESSEQUAL               '<='
 GREATEREQUAL            '>='
-ALMOSTEQUAL             '~='
 TILDE                   '~'
 CIRCUMFLEX              '^'
 LEFTSHIFT               '<<'
@@ -54,6 +53,7 @@ ATEQUAL                 '@='
 RARROW                  '->'
 ELLIPSIS                '...'
 COLONEQUAL              ':='
+ALMOSTEQUAL             '~='
 
 OP
 AWAIT
