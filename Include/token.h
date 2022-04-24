@@ -72,6 +72,7 @@ extern "C" {
 #define SOFT_KEYWORD    59
 #define ERRORTOKEN      60
 #define N_TOKENS        64
+#define ALMOSTEQUAL     65
 #define NT_OFFSET       256
 
 /* Special definitions for cooperation with parser */

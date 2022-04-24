@@ -4830,6 +4830,9 @@ PyObject* ast2obj_cmpop(struct ast_state *state, cmpop_ty o)
         case NotIn:
             Py_INCREF(state->NotIn_singleton);
             return state->NotIn_singleton;
+        case AlE:
+            Py_INCREF(state->LtE_singleton);
+            return state->LtE_singleton;
     }
     Py_UNREACHABLE();
 }
